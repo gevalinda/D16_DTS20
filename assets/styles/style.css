@@ -12,6 +12,76 @@ body {
 	padding: 0;
 }
 
+.header-logo {
+	float: left;
+	margin: 0px 10px;
+	letter-spacing: 1px;
+}
+
+.header-a {
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	font-family: "Bernard MT Condensed";
+	color: white;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.header-list a {
+	padding: 10px 10px;
+	color: white;
+	letter-spacing: 2px;
+	float: right;
+	margin: 10px 10px;
+}
+
+.header-list a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-b {
+	font-family: "Bernard MT Condensed";
+	color: #1a1717ec;
+	width: 100%;
+	margin-top: 90px;
+	
+}
+
+.header-b h3{
+	margin-top: 20px;
+	letter-spacing: 10px;
+}
+
+.header-b .img-header img{
+	height: 800px;
+	width: 100%;
+	background-size: cover;
+	object-fit: cover;
+	object-position: center;
+} 
+
+.menu-icon {
+	color: white;
+	float: right;
+	font-size: 25px;
+	padding: 10px 10px;
+	display: none;
+}
+
+@keyframes example {
+	from {
+		background-color: black;
+	}
+
+	to {
+		background-color: rgba(34, 49, 52, 0.9);
+	}
+}
+
 .container {
 	max-width: 1140px;
 	margin: auto;
@@ -43,9 +113,6 @@ body {
 	padding: 15px 15px;
 }
 
-.popular .contents .left:hover{
-	box-shadow: 0px 0px 10px gray;
-}
 
 .popular .contents .left img {
 	width: 100%;
@@ -77,26 +144,168 @@ body {
 	text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+.container2 {
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	overflow: auto;
+  }
+  
+  .fa {
+	color:blue;
+	text-align:left;
+	margin-right: 5px;
+  }
+  
+  
+  .lesson-wrapper {
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #f7f7f7;
+	text-align: center;
+  }
+  
+  .heading {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #5f5d60;
+  }
+  
+  .heading h2 {
+	font-weight: normal;
+  }
+  
+  .lesson {
+	float: left;
+	width: 20%;
+  }
+  
+  .lesson-icon {
+	position: relative;
+  }
+  
+  .lesson-icon p {
+	position: absolute;
+	top: 44%;
+	width: 100%;
+	color: white;
+  }
+  
+  .text-contents {
+	width: 80%;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 15px;
+	color: #000000;
+	text-align:left;
+  }
 
-	main {
-		display: block;
-	}
+  .text-contents span{
+	font-weight: 700;
+  }
+  
 
-	.popular .contents .left {
-		width: 100%;
-	}
+#container-card {
+	margin: 16px 25%;
+	padding: 16px;
+	background-color: #f5f6f8;
+	border-radius: 24px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
-	.popular .contents .left img {
-		object-fit: cover;
-		object-position: center;
-		width: 100%;
-	}
+#title-text {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
 
-	.popular .contents .right {
-		margin-top: 20px;
-		width: 100%;
-	}
+#subtitle-text {
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
 
+#form-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	align-content: center;
+	justify-content: center;
+}
 
+#input-name {
+	margin: 16px;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#input-email {
+	margin: 16px;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#input-kritik {
+	margin: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#button-div {
+	margin: 16px 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+label {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.first-input {
+	height: 24px;
+	width: 100%;
+	padding: 8px;
+}
+
+#kritik {
+	height: 160px;
+	width: 100%;
+	padding: 8px;
+}
+
+#submit-button {
+	height: 36px;
+	width: 100%;
+	color: #f5f6f8;
+	background-color: #1a1717ec;
+}
+
+footer {
+	background-color: #1a1717ec;
+	overflow: auto;
+	padding: 20px;
+	padding-right: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+	float: left;
+	font-size: 27px;
+	color: aliceblue;
+}
+
+.list-footer {
+	float: right;
+	color: aliceblue;
+}
+
+.list-footer ul li {
+	list-style: none;
+	line-height: 30px;
 }
