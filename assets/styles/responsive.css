@@ -36,9 +36,9 @@
 
     #container-card {
         width: 100%;
-        margin: 15px;
-        display: ;
         box-sizing: border-box;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     main {
@@ -77,6 +77,24 @@
         display: block;
     }
 
+    #container-card {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    #form-card{
+        display: block;
+    }
+
+    #input-name{
+        width: 100%;
+    }
+
+    #input-email{
+        width: 100%;
+    }
     header {
         font-size: 10px;
     }
