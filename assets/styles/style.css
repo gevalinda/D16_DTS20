@@ -2,8 +2,6 @@
 
 * {
 	box-sizing: border-box;
-	outline: none;
-	text-decoration: none;
 }
 
 body {
@@ -31,12 +29,18 @@ body {
 	animation-iteration-count: infinite;
 }
 
+.header-a h2 {
+	color: #fff;
+}
+
 .header-list a {
 	padding: 10px 10px;
 	color: white;
 	letter-spacing: 2px;
 	float: right;
 	margin: 10px 10px;
+	list-style: none;
+	text-decoration: none;
 }
 
 .header-list a:hover {
@@ -45,24 +49,24 @@ body {
 
 .header-b {
 	font-family: "Bernard MT Condensed";
-	color: #1a1717ec;
+	color: #00121b;
 	width: 100%;
 	margin-top: 90px;
-	
+
 }
 
-.header-b h3{
+.header-b h3 {
 	margin-top: 20px;
 	letter-spacing: 10px;
 }
 
-.header-b .img-header img{
+.header-b .img-header img {
 	height: 800px;
 	width: 100%;
 	background-size: cover;
 	object-fit: cover;
 	object-position: center;
-} 
+}
 
 .menu-icon {
 	color: white;
@@ -74,7 +78,7 @@ body {
 
 @keyframes example {
 	from {
-		background-color: black;
+		background-color: #00121b;
 	}
 
 	to {
@@ -88,12 +92,14 @@ body {
 	min-height: 1px;
 }
 
-.popular {
-	padding: 50px 15px;
+.about-us {
+	background-color: #fff;
+	padding: 80px 15px;
+	float: left;
 	width: 100%;
 }
 
-.popular h1 {
+.about-us h1 {
 	font-size: 36px;
 	text-align: center;
 	padding-bottom: 50px;
@@ -101,48 +107,100 @@ body {
 	margin: 0;
 }
 
-.popular .contents {
+.about-us .contents {
 	width: 100%;
-	display: inline-block;
-	padding: 50px 30px;
-}
-
-.popular .contents .left {
 	float: left;
+}
+
+.about-us .contents .left {
 	width: 35%;
-	padding: 15px 15px;
+	float: left;
+	padding: 0px 15px;
 }
 
-
-.popular .contents .left img {
+.about-us .contents .left img {
 	width: 100%;
-	background-size: cover;
 }
 
-.popular .contents .right {
-	float: right;
-	padding: 0px 70px;
+.about-us .contents .right {
+	float: left;
+	padding: 0px 15px;
 	width: 65%;
-	text-align: center;
-	display: block;
 }
 
-
-.popular .contents .right h4 {
+.about-us .contents .right h4 {
 	margin: 0px;
 	color: #000000;
 	font-size: 20px;
-	margin-bottom: 20px;
+	padding: 0;
 }
 
-.popular .contents .right p {
-	font-size: 15px;
+.about-us .contents .right p {
+	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 25px;
 	color: #444444;
-	margin: 0 auto;
-	text-align: center;
+	margin: 10px 0px;
+	text-align: justify;
+
 }
+
+.services {
+	width: 100%;
+	float: left;
+	padding: 80px 15px;
+}
+
+.services h1 {
+	font-size: 36px;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 50px;
+	color: #000000;
+}
+
+.services .contents {
+	width: 100%;
+	float: left;
+}
+
+.services .contents .box {
+	padding: 15px;
+	width: 33.33%;
+	float: left;
+}
+
+.services .contents .box .inner {
+	padding: 15px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	transition: box-shadow .5s ease;
+}
+
+.services .contents .box .inner:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+
+.services .contents .box .inner img {
+	width:100px;
+	height: 100px;
+}
+
+.services .contents .box .inner h4 {
+	margin: 10px 0px;
+	color: #000000;
+	font-size: 20px;
+}
+
+
+.services .contents .box .inner p {
+	line-height: 24px;
+	font-size: 16px;
+	color: #444444;
+	letter-spacing: .5px;
+}
+
 
 .container2 {
 	max-width: 1170px;
@@ -150,62 +208,70 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 	overflow: auto;
-  }
-  
-  .fa {
-	color:blue;
-	text-align:left;
+}
+
+.heading h2 {
+	font-size: 36px;
+	color: #000;
+}
+
+.fa {
+	color: #000;
+	text-align: left;
 	margin-right: 5px;
-  }
-  
-  
-  .lesson-wrapper {
+}
+
+
+.lesson-wrapper {
 	padding-bottom: 80px;
 	padding-left: 5%;
 	padding-right: 5%;
-	background-color: #f7f7f7;
 	text-align: center;
-  }
-  
-  .heading {
+}
+
+.heading {
 	padding-top: 80px;
 	padding-bottom: 50px;
 	color: #5f5d60;
-  }
-  
-  .heading h2 {
-	font-weight: normal;
-  }
-  
-  .lesson {
+}
+
+.heading h2 {
+	font-size: 36px;
+	text-align: center;
+	padding-bottom: 50px;
+	color: #000000;
+	margin: 0;
+}
+
+.lesson {
 	float: left;
 	width: 20%;
-  }
-  
-  .lesson-icon {
+}
+
+.lesson-icon {
 	position: relative;
-  }
-  
-  .lesson-icon p {
+}
+
+.lesson-icon p {
 	position: absolute;
 	top: 44%;
 	width: 100%;
 	color: white;
-  }
-  
-  .text-contents {
+}
+
+.text-contents {
 	width: 80%;
 	display: inline-block;
 	margin-top: 15px;
 	font-size: 15px;
 	color: #000000;
-	text-align:left;
-  }
+	text-align: left;
+}
 
-  .text-contents span{
+.text-contents span {
 	font-weight: 700;
-  }
-  
+}
+
 
 #container-card {
 	margin: 16px 25%;
@@ -218,6 +284,7 @@ body {
 }
 
 #title-text {
+	color: #000;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -283,29 +350,88 @@ label {
 	height: 36px;
 	width: 100%;
 	color: #f5f6f8;
-	background-color: #1a1717ec;
+	background-color: #00121b;
 }
 
-footer {
-	background-color: #1a1717ec;
-	overflow: auto;
-	padding: 20px;
-	padding-right: 40px;
-	font-family: 'Montserrat', sans-serif;
+.footer {
+	width: 100%;
+	background: #00121b;
+	display: block;
 }
 
-.logo {
-	float: left;
-	font-size: 27px;
-	color: aliceblue;
+.inner-footer {
+	width: 95%;
+	margin: auto;
+	padding: 30ox 10px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
 }
 
-.list-footer {
-	float: right;
-	color: aliceblue;
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
 }
 
-.list-footer ul li {
+h1 {
+	padding: 10px 0px;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.footer-items p {
+	color: grey;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+h2 {
+	margin-left: 40px;
+	color: grey;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.border {
+	height: 2px;
+	width: 50px;
+	margin-left: 40px;
+	background: #ff9800;
+}
+
+.footer-items ul {
 	list-style: none;
-	line-height: 30px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	margin-left: 0px;
+}
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: #ff9800;
+}
+
+ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #3d545f;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
 }

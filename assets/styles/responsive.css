@@ -45,26 +45,26 @@
         display: block;
     }
 
-    .popular .contents .left {
-        width: 100%;
+    .about-us .contents .left{
+        width:100%;
     }
-
-    .popular .contents .left img {
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        margin: 20px
+    .about-us .contents .right{
+        width:100%;
+        padding-top:30px;
     }
-
-    .popular .contents .right {
-        margin-top: 20px;
-        width: 100%;
+    .services .contents .box{
+        width:100%;
     }
 
     .lesson {
         width: 50%;
         margin-bottom: 50px;
-      }
+    }
+
+    .footer-items{
+        width: 50%;
+    }
+
 }
 
 /* Untuk Smartphone */
@@ -81,7 +81,11 @@
         font-size: 10px;
     }
 
-    .lesson{
-        width:100%;
-      }
+    .lesson {
+        width: 100%;
+    }
+
+    .footer-items{
+        width: 100%;
+    }
 }
